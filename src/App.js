@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.css';
 import useDarkMode from './useDarkMode';
-import {ReducerCase} from './useReducerCase/ReducerCase';
+import { ReducerCase } from './useReducerCase/ReducerCase';
+import { StateEx } from './stateEx';
+
 const style = {
   dark: {
     color: 'white',
@@ -24,8 +26,10 @@ export default function App() {
       </button>
       <br />
       {mode}
-      <br/>
+      <br />
       <ReducerCase />
+      <br />
+      <StateEx />
     </div>
   );
 }
